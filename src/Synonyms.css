@@ -1,0 +1,10 @@
+.Synonyms {
+  padding: 0;
+  margin: 0;
+}
+.Synonyms li {
+  display: inline;
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+  padding-right: 15px;
+}

@@ -1,6 +1,7 @@
 :root {
   --primary-color: #48635a;
   --background-color: #f5f9fa;
+  --secondary-color: #92c2b2;
 }
 .Dictionary input {
   width: 100%;
