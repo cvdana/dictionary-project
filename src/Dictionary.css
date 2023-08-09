@@ -1,4 +1,24 @@
-.Dictionary .searchbar {
-  display: block;
-  text-align: center;
+:root {
+  --primary-color: #48635a;
+  --background-color: #f5f9fa;
+}
+.Dictionary input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 15px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+.Dictionary section {
+  background-color: var(--background-color);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 10%);
+  padding: 30px;
+  margin: 20px 5px;
+}
+.Dictionary .hint {
+  font-size: 12px;
+  margin-top: 5px;
+  color: var(--primary-color);
 }
