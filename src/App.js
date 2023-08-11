@@ -23,6 +23,18 @@ export default function App() {
             </a>{" "}
             coded by Dana Visnitchi
           </small>
+          <br />
+          <small className="wallpaper">
+            <a
+              href="https://www.freepik.com/free-photo/textured-background-white-tone_17595847.htm#page=2&query=paper&position=40&from_view=search&track=sph"
+              target="blank"
+              title="Freepik"
+              rel="noreferrer"
+            >
+              Image by rawpixel.com
+            </a>{" "}
+            on Freepik
+          </small>
         </footer>
       </div>
     </div>
