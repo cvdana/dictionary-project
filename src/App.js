@@ -16,6 +16,7 @@ export default function App() {
             <a
               href="https://github.com/cvdana/dictionary-project"
               target="blank"
+              title="github"
               rel="noreferrer"
             >
               Open-source project
