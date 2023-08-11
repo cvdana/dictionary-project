@@ -8,15 +8,23 @@ export default function Dictionary(props) {
   const [keyword, setKeyword] = useState(props.defaultKeyword);
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     console.log(response.data);
     setResults(response.data);
+  }
+  function handlePexelsResponse(response) {
+    console.log(response);
   }
   function search() {
     // documentation: https://www.shecodes.io/learn/apis/dictionary
     const apiKey = `94413t4dbc141o4dc71ce00caf84f31e`;
     const apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse);
+    //pexels documentation:https://www.pexels.com/api/documentation/
+    const pexelsApiKey = `0zxOq9DU4CmofuLHJ7x0V9lQdZCLwCjC5fNYyq9f7ItrIICsb1VK16qR`;
+    const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    const headers = { Authorization: `${pexelsApiKey}` };
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
   function handleSubmit(event) {
     event.preventDefault();
