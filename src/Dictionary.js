@@ -9,11 +9,10 @@ export default function Dictionary(props) {
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
   function handleDictionaryResponse(response) {
-    console.log(response.data);
     setResults(response.data);
   }
   function handlePexelsResponse(response) {
-    console.log(response);
+    console.log(response.data);
   }
   function search() {
     // documentation: https://www.shecodes.io/learn/apis/dictionary
