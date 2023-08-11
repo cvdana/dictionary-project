@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
+//<a href="https://www.freepik.com/free-photo/textured-background-white-tone_17595847.htm#page=2&query=paper&position=40&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
 
 export default function Dictionary(props) {
   const [keyword, setKeyword] = useState(props.defaultKeyword);
